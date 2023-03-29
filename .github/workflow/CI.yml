@@ -1,0 +1,13 @@
+name: Continous-Integration
+
+on:
+  push:
+    braches:
+      -main
+
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+    steps: 
+      -name: Checkout repo
+      uses: actions/checkout@v3
